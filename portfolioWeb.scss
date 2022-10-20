@@ -12,16 +12,16 @@
   }
 
   
-  .boton {
-    display: inline-flex;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    color: black;
-    font-size: 20px;
-    padding-left: 40%;
-    border-color: transparent;
-  }
+  // .boton {
+  //   display: inline-flex;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: transparent;
+  //   color: black;
+  //   font-size: 20px;
+  //   padding-left: 40%;
+  //   border-color: transparent;
+  // }
   
   .banner_container > .banner {
     height: 30rem;
@@ -73,14 +73,14 @@
   
   nav ul {
     width: 100%;
-  }
-  
-  nav ul li {
-    margin-top: 10px;
-    display: inline-block;
-    list-style: none;
-    text-decoration: none;
-    color: #fff;
+
+    li {
+      margin-top: 10px;
+      display: inline-block;
+      list-style: none;
+      text-decoration: none;
+      color: #fff;
+    }
   }
   
   .navBar_Reduced {
@@ -131,73 +131,45 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    }
 
   .sobreMi_item_A, .sobreMi_item_B, .experiencia_item {
     flex-direction: column;
     width:auto;
     
   }
-  .sobreMi_item_A {
-    padding: 5.5rem 0.4rem 0 1.5rem;
+    .sobreMi_item_A {
+      padding: 5.5rem 0.4rem 0 1.5rem;
+      h1{
+        font-size: 1.5rem;
+        }
+    }
+
+    .sobreMi_item_B {
+      background-color: #234c72;
+      .sobreMi_item_B h4{
+      justify-content: center;
+      }
+    }
   }
 
-  .sobreMi_item_A h1{
-  font-size: 1.5rem;
-  }
-  .sobreMi_item_B {
-    background-color: #b41f1f;
-  }
-
-  .sobreMi_item_B h4{
-  justify-content: center;
-  }
-
-  /* //////////////////////////////////////////// */
-
-  /* 
-  .experiencia {
-  } */
-
-  .experiencia_item {
+  .item {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     padding: 1rem;
     margin-bottom: 0.5rem;
     background-color: #646464;
     border-radius: 0px;
+    
+      &:hover {
+      background-color: #818181;
+      color: rgb(253, 236, 236);;
+      box-shadow: 0 0 10px #303030;
+      cursor: pointer;
+    }
   }
-
-  .experiencia_item:hover {
-    background-color: #818181;
-    color: rgb(253, 236, 236);;
-    box-shadow: 0 0 10px #303030;
-    cursor: pointer;
-  }
-
  /* //////////////////////////////////////////// */
 
-  
-  .educacion {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  .educacion_item {
-    background-color: #b41f1f;
-    width: 100px;
-  }
-  
-
-  .habilidades {
-    display: grid;
-    gap: 10px;
-    grid: 100%;
-    grid-template-columns: 1fr 4fr 2fr 5fr;
-    grid-template-rows: 2fr 3fr 4fr 1fr;
-  }
 
   .grid-item {
     background-color: black;
